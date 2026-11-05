@@ -1,0 +1,10 @@
+/tmp/
+/lib/valgrind/*.bundle
+/lib/valgrind/*.so
+/ext/valgrind/Makefile
+/ext/valgrind/*.o
+/ext/valgrind/*.bundle
+/ext/valgrind/*.so
+/ext/valgrind/mkmf.log
+/pkg/
+/Gemfile.lock
