@@ -32,6 +32,8 @@ valgrind the underlying client requests are no-ops.
 - `Valgrind.callgrind_start_instrumentation`
 - `Valgrind.callgrind_stop_instrumentation`
 - `Valgrind.callgrind_zero_stats`
+- `Valgrind.callgrind_toggle_collect` — toggle whether events are collected
+  (pair with `--collect-atstart=no`)
 - `Valgrind.callgrind_dump_stats(description = nil)`
 
 ## Development

@@ -13,6 +13,10 @@ class ValgrindTest < Minitest::Test
     assert_nil Valgrind.callgrind_zero_stats
   end
 
+  def test_toggle_collect
+    assert_nil Valgrind.callgrind_toggle_collect
+  end
+
   def test_dump_stats_without_description
     assert_nil Valgrind.callgrind_dump_stats
   end

@@ -33,6 +33,11 @@ static VALUE callgrind_zero_stats(VALUE self) {
   return Qnil;
 }
 
+static VALUE callgrind_toggle_collect(VALUE self) {
+  CALLGRIND_TOGGLE_COLLECT;
+  return Qnil;
+}
+
 void Init_valgrind(void) {
   VALUE mValgrind = rb_define_module("Valgrind");
   rb_define_module_function(mValgrind, "callgrind_dump_stats",
@@ -43,4 +48,6 @@ void Init_valgrind(void) {
                             callgrind_stop_instrumentation, 0);
   rb_define_module_function(mValgrind, "callgrind_zero_stats",
                             callgrind_zero_stats, 0);
+  rb_define_module_function(mValgrind, "callgrind_toggle_collect",
+                            callgrind_toggle_collect, 0);
 }
